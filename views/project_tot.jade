@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  body
+    include navbar 
+    br
+    br
+    br
+    .container
+      ul#myTab.nav.nav-tabs(role='tablist')
+        li.nav-item
+          a#home-tab.nav-link.active(data-toggle='tab', href='#patents', role='tab', aria-controls='home', aria-selected='true')
+            | Patents
+        li.nav-item
+          a#profile-tab.nav-link(data-toggle='tab', href='#bookc', role='tab', aria-controls='profile', aria-selected='false')
+            | Book Chapters
+        li.nav-item
+          a#contact-tab.nav-link(data-toggle='tab', href='#ijourn', role='tab', aria-controls='contact', aria-selected='false')
+            | International Journals
+        li.nav-item
+          a#contact-tab.nav-link(data-toggle='tab', href='#njourn', role='tab', aria-controls='contact', aria-selected='false')
+            | National Journals
+        li.nav-item
+          a#contact-tab.nav-link(data-toggle='tab', href='#conf', role='tab', aria-controls='contact', aria-selected='false')
+            | Conferences
+    #myTabContent.tab-content
+      #patents.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+        include
+      #ijourn.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+        include 
+      #bookc.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        include 
+      #njourn.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        include  
+      #conf.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        include       

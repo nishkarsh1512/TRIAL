@@ -1,0 +1,41 @@
+h3(style='color: #2D1FF0; font-family:Georgia, serif; text-align:center') Total Publications : 309
+br
+.container
+  ul#myTab.nav.nav-tabs(role='tablist')
+    li.nav-item
+      a#home-tab.nav-link.active(data-toggle='tab', href='#textbook', role='tab', aria-controls='home', aria-selected='true')
+        | Textbook &emsp;
+        h5.text-center(style='color: #7B1212; font-family:Georgia, serif,') (1)
+    li.nav-item
+      a#home-tab.nav-link(data-toggle='tab', href='#patents', role='tab', aria-controls='home', aria-selected='false')
+        | Patents &emsp;
+        h5.text-center(style='color: #7B1212; font-family:Georgia, serif,') (16)
+    li.nav-item
+      a#profile-tab.nav-link(data-toggle='tab', href='#bookc', role='tab', aria-controls='profile', aria-selected='false')
+        | Book Chapters &emsp;
+        h5.text-center(style='color: #7B1212; font-family:Georgia, serif,') (15)
+    li.nav-item
+      a#contact-tab.nav-link(data-toggle='tab', href='#ijourn', role='tab', aria-controls='contact', aria-selected='false')
+        | International Journals &emsp;
+        h5.text-center(style='color: #7B1212; font-family:Georgia, serif,') (184)
+    li.nav-item
+      a#contact-tab.nav-link(data-toggle='tab', href='#njourn', role='tab', aria-controls='contact', aria-selected='false')
+        | National Journals &emsp;
+        h5.text-center(style='color: #7B1212; font-family:Georgia, serif,') (3)
+    li.nav-item
+      a#contact-tab.nav-link(data-toggle='tab', href='#conf', role='tab', aria-controls='contact', aria-selected='false')
+        | Conferences &emsp;
+        h5.text-center(style='color: #7B1212; font-family:Georgia, serif,') (91)
+#myTabContent.tab-content
+  #textbook.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+    include publications/overall/textbook
+  #patents.tab-pane.fade(role='tabpanel', aria-labelledby='home-tab')
+    include publications/overall/patent
+  #ijourn.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+    include publications/overall/ijournal
+  #bookc.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+    include publications/overall/bookc
+  #njourn.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+    include publications/overall/njournal 
+  #conf.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+    include publications/overall/conf      

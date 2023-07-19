@@ -1,0 +1,459 @@
+extends layout
+
+block content
+  body.body-home
+    include navbar
+    .bd-example.row.label-2
+      .col-md-12.bg-dark
+        #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+            li(data-target='#carouselExampleCaptions', data-slide-to='1')
+            li(data-target='#carouselExampleCaptions', data-slide-to='2')
+            //li(data-target='#carouselExampleCaptions', data-slide-to='3')
+            //li(data-target='#carouselExampleCaptions', data-slide-to='4')
+            //li(data-target='#carouselExampleCaptions', data-slide-to='5')
+            //li(data-target='#carouselExampleCaptions', data-slide-to='6')
+            //li(data-target='#carouselExampleCaptions', data-slide-to='7')
+
+          .carousel-inner
+            .carousel-item.active
+              img.d-block(src='./img/banner/111.jpg', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h3 Entrance of FSW Lab
+            .carousel-item
+              img.d-block(src='./img/banner/8.jpg', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h3 FSW Lab
+                p Inside view
+            .carousel-item
+              img.d-block(src='./img/banner/9.jpg', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h3 ETA FSW Machine
+            .carousel-item
+              img.d-block(src='./img/banner/oldbulding.jpg', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h3 Old Bulding of IIT Kharagpur
+          a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+      //.col-md-4.bg-profquote.p-5
+        .row.prof-img.container.mx-auto.justify-content-center
+          .hexagon2
+            .hexTop
+            .hexBottom
+        .row.prof-q(style='margin-right: 2%;')
+          blockquote.text-light
+            p
+              
+              | ".... trying to create an environment to fuflil the dreams of scholars on Friction Stir Welding. Glad to see 
+              | young minds coming up with new avenues on problem-solutions. Amazed to see their day-in day-out hard work in 
+              | achieving those. Brain-storming technical sessions, DIY workshop, and philosophical discussions are all part of it. 
+              | It is a family of some enthusiastic minds....."
+              
+            fp.blockquote-footer
+              span.font(style='color: #CEE91E; font-family:Georgia, serif; font-weight-bold; size=12px') 
+                a.home(href= 'http://www.fswlab.in/skpal') Surjya K Pal 
+                br
+                a.home(href= 'http://www.kgpchronicle.iitkgp.ac.in/mission-possible/') Lord Kumar Bhattacharyya Chair Professor in Manufacturing
+              cite(title='Source Title') 
+              p
+
+    
+    .content-home
+      //- .row.top
+      //-   .col-md-8.label.space-d
+      //-     //- #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
+      //-     //-   .carousel-inner
+      //-     //-     .carousel-item.active
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/2.JPG', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/1.jpg', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/5.jpg', alt='...')    
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/3.JPG', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/4.JPG', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/6.jpg', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/7.JPG', alt='...')   
+      //-     //-   a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
+      //-     //-     span.carousel-control-prev-icon(aria-hidden='true')
+      //-     //-     span.sr-only Previous
+      //-     //-   a.carousel-control-next(href='#carouselExampleFade', role='button', data-slide='next')
+      //-     //-     span.carousel-control-next-icon(aria-hidden='true')
+      //-     //-     span.sr-only Next
+      //-     .bd-example
+      //-       #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+      //-         ol.carousel-indicators
+      //-           li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='1')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='2')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='3')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='4')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='5')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='6')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='7')
+
+      //-         .carousel-inner
+      //-           .carousel-item.active
+      //-             img.d-block.w-100(src='./img/banner/2.JPG', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Interns working on FSW machine
+      //-               p Real time process control via image processing
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/1.jpg', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 FSW Lab
+      //-               p Inside view
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/3.JPG', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Picnic at Tajpur
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/4.JPG', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Birthday celebration
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/5.jpg', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 FSW Lab
+      //-               p Inside view               
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/6.jpg', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Farewell
+      //-               p Scholars from University of Johannesburg, SA
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/7.JPG', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Welded sample showcase & Robotic FSW    
+      //-         a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+      //-           span.carousel-control-prev-icon(aria-hidden='true')
+      //-           span.sr-only Previous
+      //-         a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+      //-           span.carousel-control-next-icon(aria-hidden='true')
+      //-           span.sr-only Next
+
+      //-   .col-md-3.space-d(style='margin-left: 5%;!important')
+      //-     .top-new.justify-content-center.bg-warning
+      //-       h3.text-center Whats New
+      //-       .event-div 
+      //-         span.font-weight-bold 
+      //-         a.home(href= 'http://www.fswlab.in/doctorals') Ranjan Kumar Vishwakarma 
+      //-         | joined Ph.D after completing MTech from FSW Lab
+      //-         br
+      //-       .event-div  
+      //-         span.font-weight-bold
+      //-         a.home(href= 'http://www.fswlab.in/doctorals') Ananta Dutta 
+      //-         | joined our FSW Lab after his MTech from IIT Bhubaneswar
+      //-         br
+      //-       .event-div  
+      //-         span.font-weight-bold 
+      //-         a.home(href= 'http://www.fswlab.in/doctorals') Md Noorul Hoda  
+      //-         | is with us at FSW Lab for his Ph.D research
+      //-         br
+      //-       .event-div
+      //-         | Interested  
+      //-         a.home(href= 'http://www.fswlab.in/interns') Interns on  
+      //-         span.font-weight-bold Robotic applications, Industry 4.0, Cloud computing
+      //-         |  may apply
+      //-         br
+      //-       .event-div
+      //-         span.font-weight-bold 
+      //-         a.home(href= 'http://www.fswlab.in/facilities') Robotic FSW facility 
+      //-         | has been procured under DHI-TCS project 
+      //-         br
+      //-       .event-div
+      //-         span.font-weight-bold 
+      //-         a.home(href= 'http://www.fswlab.in/doctorals') Soumya Sangita Nayak 
+      //-         | has delivered Registration Seminar  
+      //-         | on Numerical Modeling of Texture in FSW
+      //-       br
+      //-       .event-button.text-center
+      //-         button.btn.btn-light(type='button', onclick="location.href='/news'") Read all News
+
+
+            
+            
+            
+      .row(style="margin-top:1%")      
+        .col-md-4.text-white.space-d2.bg-about.ind-con
+          br
+          .row.mx-auto
+            h3(style='') About Friction Stir Welding Laboratory
+          .row
+            #about
+              p
+              span.font(style="")
+                | Friction Stir Welding Laboratory has been developed under the leadership of 
+                a.home(href= '/skpal') Prof. Surjya K Pal. 
+                | It is one of the vibrant laboratories of IIT Kharagpur, presently constituting a team of 
+                a.home(href='/Doctoral') fifteen doctoral scholars, and 
+                a.home(href= '/PG') four postgraduate scholars. 
+                br
+                | Research spans from improvisation of the welding process, mechanical and metallurgical characterizations, 
+                | implementation of Industry 4.0 concepts for real time monitoring and control, and numerical modeling and simulation.
+                
+                | The laboratory houses several 
+                a.home(href= '/Facilities') state-of-the-art facilities 
+                | such as CNC and robotic FSW machines, sophisticated sensors.
+                | The laboratory provides experimental support to many institutions in India and Aborad on a regular basis. 
+                br
+                | There is a huge inflow of  
+                a.home(href= '/Interns') interns 
+                | from several institutions across the nation in summer and winter seasons
+                | The lab has also got a strong active research collaboration with the industry. 
+        .col-md-3.5.space-d(style='margin-left: 0.5%;!important')
+          .top-new.justify-content-center.bg-warning(style='height:100%;')
+            h3.text-center Whats New
+            .event-div 
+              span.font-weight-bold
+              | Lab FSW congratulates and wishes continued success 
+              a.home(href= 'http://www.fswlab.in/doctorals') Dr. Omkar Mypati 
+              |  on getting Postdoctoral Fellowship offer from University of Nottingham.
+              br
+            .event-div 
+              span.font-weight-bold
+              | The entire team of FSW Lab congratulates 
+              a.home(href= 'http://www.fswlab.in/doctorals') Dr. Raju Prasad Mahto & 
+              a.home(href= 'http://www.fswlab.in/doctorals') Dr. Abhisekh Sharma 
+              |  on getting Postdoctoral Fellowship offer. Wishing them
+              | loads of luck for their future endeavour.
+              br
+            //.event-div
+              span.font-weight-bold
+              a.home(href= 'http://www.fswlab.in/doctorals') Ananta Dutta 
+              | joined our FSW Lab after his MTech from IIT Bhubaneswar
+              br
+            //.event-div  
+              span.font-weight-bold 
+              a.home(href= 'http://www.fswlab.in/doctorals') Md Noorul Hoda  
+              | is with us at FSW Lab for his Ph.D research
+              br
+            //.event-div
+              | Interested  
+              a.home(href= 'http://www.fswlab.in/interns') Interns on  
+              span.font-weight-bold Robotic applications, Industry 4.0, Cloud computing
+              |  may apply
+              br
+            .event-div
+              span.font-weight-bold 
+              | The Lab has achieved a new project on 
+              | "Design and Fabrication of a Cold Plate using Friction Stir Channeling for Thermal Management of Electronic Systems and Battery Packs"
+              | from DST, GoI.
+            .event-div
+              span.font-weight-bold 
+              | FSW Lab congratulates 
+              a.home(href= 'http://www.fswlab.in/doctorals') Pooja Sarkar,
+              a.home(href= 'http://www.fswlab.in/staff') Pratik Mishra &  
+              a.home(href= 'http://www.fswlab.in/collab') Prof. Anandaroop Bhattacharyya  
+              | for their patent on "Friction stir tunneling on pipe wall"
+            br
+            .event-button.text-center
+              button.btn.btn-light(type='button', onclick="location.href='/news'") Read all News
+        .col-md-4.bg-profquote.p-3.m-3
+          .row.prof-img.container.mx-auto.justify-content-center
+            .hexagon2
+              .hexTop
+              .hexBottom
+          blockquote
+            p.text-white  
+              | ".... trying to create an environment to fuflil the dreams of scholars on Friction Stir Welding. Glad to see 
+              | young minds coming up with new avenues on problem-solutions. Amazed to see their day-in day-out hard work in 
+              | achieving those. Brain-storming technical sessions, DIY workshop, and philosophical discussions are all part of it. 
+              | It is a family of some enthusiastic minds....."
+            br  
+            fp.blockquote-footer
+              span.font(style='color: #CEE91E; font-family:Georgia, serif; font-weight-bold; size=12px') 
+                a.home(href= 'http://www.fswlab.in/skpal') Surjya K Pal 
+                br
+                a.home(href= 'http://www.kgpchronicle.iitkgp.ac.in/mission-possible/') Lord Kumar Bhattacharyya Chair Professor in Manufacturing
+              cite(title='Source Title') 
+              p
+        
+      
+      //- .row.space-d2
+      //-   .col-md-3.prof-img.container(style='margin-left: 100px;padding-left: 0px;')
+      //-     .hexagon2
+      //-       .hexTop
+      //-       .hexBottom
+      //-   .col-md-7.prof-q(style='margin-right: 2%;margin-top:10%')
+      //-     blockquote.blockquote.text-light
+      //-       p.mb-0
+              
+      //-         | ".... trying to create an environment to fuflil the dreams of scholars on Friction Stir Welding. Glad to see 
+      //-         | young minds coming up with new avenues on problem-solutions. Amazed to see their day-in day-out hard work in 
+      //-         | achieving those. Brain-storming technical sessions, DIY workshop, and philosophical discussions are all part of it. 
+      //-         | It is a family of some enthusiastic minds....."
+              
+      //-       fp.blockquote-footer
+      //-         span.font(style='color: #CEE91E; font-family:Georgia, serif; font-weight-bold; size=12px') 
+      //-           a.home(href= 'http://www.fswlab.in/skpal') Surjya K Pal 
+      //-           br
+      //-           a.home(href= 'http://www.kgpchronicle.iitkgp.ac.in/mission-possible/') Lord Kumar Bhattacharyya Chair Professor in Manufacturing
+      //-         cite(title='Source Title') 
+      //-         p
+
+
+      //.row.mx-auto(style='margin-top:5%')  
+        .col-md-3  
+          .card.h-80(style='width: 15rem;')
+            img.mx-auto.card-img-top(src='./img/patents/himal.png', alt='...')
+            .card-body
+              h5.card-title Our Achievements
+              p.card-text
+                | Mr. Himal Agrawal (UG) won the "ASME IDSC-2016”
+              //a.btn.btn-primary(href='#') Go somewhere
+            
+        .col-md-3.mx-auto  
+          .card.h-80(style='width: 15rem;')
+            #carouselControls1.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  .card(style='width: 15rem;')
+                    img.card-img-top(src='./img/patents/picnic.png', alt='...')
+                    .card-body
+                      h5.card-title Our Fun
+                      p.card-text
+                        | Picnic at Tajpur
+                      //a.btn.btn-primary(href='#') Go somewhere
+                .carousel-item
+                  .card(style='width: 15rem;')
+                    img.card-img-top(src='./img/patents/birthday.png', alt='...')
+                    .card-body
+                      h5.card-title Our Fun
+                      p.card-text
+                        | Birthday Celebration
+                      //a.btn.btn-primary(href='#') Go somewhere
+                //.carousel-item
+                  .card(style='width: 24rem;')
+                    img.card-img-top(src='./img/banner/5.jpg', alt='...')
+                    .card-body
+                      h5.card-title Our Fun
+                      p.card-text
+                        | Inside View
+                      //a.btn.btn-primary(href='#') Go somewhere
+                .carousel-item
+                  .card(style='width: 15rem;')
+                    img.card-img-top(src='./img/patents/SA.png', alt='...')
+                    .card-body.align-self-end
+                      h5.card-title Our Fun
+                      p.card-text
+                        | Farewell to scholars from University of Johannesburg, SA
+                      //a.btn.btn-primary(href='#') Go somewhere
+              a.carousel-control-prev(href='#carouselControls1', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+              a.carousel-control-next(href='#carouselControls1', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+
+        //.col-md-3.justify-content-center.text-center  
+          .card.h-80(style='width: 15rem;')
+            #carouselControls2.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  .card(style='width: 15rem;')
+                    img.card-img-top(src='./img/patents/vg.png', alt='...')
+                    .card-body
+                      h5.card-title Our Innovation
+                      p.card-text
+                        | Counter Rotating Twin Tool with Variable Gap
+                      a.btn.btn-primary(href='http://www.fswlab.in/pub') Read more
+                .carousel-item
+                  .card(style='width: 15rem;')
+                    img.card-img-top(src='./img/patents/cst.png', alt='...')
+                    .card-body
+                      h5.card-title Our Innovation
+                      p.card-text
+                        | Counter Rotating Pin and Shoulder
+                      a.btn.btn-primary(href='http://www.fswlab.in/pub') Read more
+                .carousel-item
+                  .card(style='width: 15rem;')
+                    img.card-img-top(src='./img/patents/foam.png', alt='...')
+                    .card-body
+                      h5.card-title Our Innovation
+                      p.card-text
+                        | Copper foam by Friction Sintering
+                      a.btn.btn-primary(href='http://www.fswlab.in/pub') Read more
+              a.carousel-control-prev(href='#carouselControls2', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+              a.carousel-control-next(href='#carouselControls2', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+
+        .col-md-3  
+          .card.h-80(style='width: 15rem;')
+            img.card-img-top(src='./img/patents/tcs11.png', alt='...')
+            .card-body
+              h5.card-title Our Industry Collaboration
+              p.card-text
+                | Project with TCS on Industry 4.0
+              a.btn.btn-primary(href='http://www.coeamt.com/industry-project-project1.php') Read more
+      
+        // Portfolio Grid
+      section#portfolio.page-section
+        .container
+          .row
+            .col-md-3.col-sm-6.portfolio-item
+              a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                .portfolio-hover
+                  .portfolio-hover-content
+                    i.fas.fa-plus.fa-3x
+                img.img-fluid(src='./img/patents/himal.jpg', alt='')
+              .portfolio-caption.bg-light
+                h4 Our achievement
+                p.text-muted Mr. Himal Agrawal (UG) won the "ASME IDSC-2016”
+            .col-md-3.col-sm-6.portfolio-item
+              #carouselControls2.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                  .carousel-item.active
+                    img.card-img-top(src='./img/patents/vg.jpg', alt='...')
+                  .carousel-item
+                    img.card-img-top(src='./img/patents/cst.png', alt='...')
+                  .carousel-item
+                    img(src='./img/patents/foam.jpg', alt='...')
+              a.carousel-control-prev(href='#carouselControls2', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+              a.carousel-control-next(href='#carouselControls2', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+              .portfolio-caption.bg-light
+                h4 Our patents
+                p.text-muted 
+            .col-md-3.col-sm-6.portfolio-item
+              #carouselControls1.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                  .carousel-item.active
+                    img.card-img-top(src='./img/patents/3.jpg', alt='...')
+                  .carousel-item
+                    img.card-img-top(src='./img/patents/4.jpg', alt='...')
+                  .carousel-item
+                    img(src='./img/patents/6.jpg', alt='...')
+              a.carousel-control-prev(href='#carouselControls1', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+              a.carousel-control-next(href='#carouselControls1', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+              .portfolio-caption.bg-light
+                h4 Our fun
+                p.text-muted 
+            .col-md-3.col-sm-6.portfolio-item
+              a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                .portfolio-hover
+                  .portfolio-hover-content
+                    i.fas.fa-plus.fa-3x
+                img.mx-auto.img-fluid(src='./img/patents/tcs.png', alt='')
+              .portfolio-caption.bg-light
+                h4 Our industry partner
+                p.text-muted  
+            

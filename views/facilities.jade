@@ -1,0 +1,200 @@
+extends layout
+
+block content
+  body
+    include navbar 
+    br
+    br
+    br
+    .justify-content-center
+        .row.justify-content-center
+            //h1. 
+                Lab Facilities
+        .jumbotron.container(style="background-color:#AFE0A8")
+            .row
+                .col-md-4.mx-auto
+                    img.facil-img(src='./img/facilities/RoboticFSW1.jpg', alt='')
+                .col-md-8.my-auto
+                    h4(style='color: #d9534f; font-family:Georgia, serif') Robot assisted Micro / Macro FSW Machine
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Industry 4.0 enabled robotic FSW machine for micro and macro jobs
+                        li    
+                            | Integrated with 6-component load cell for acquiring force and torque in three directions
+                            br
+                            span.font-italic(style="color:#000000")
+                              | Procured under TCS project, Centre of Excellence in Advanced Manufacturing Technology
+                            br
+                            a.mx-auto(href='https://www.youtube.com/channel/UCh7uBO5Tf-SWmlx3b7dzfwg?view_as=subscriber') <img src="img/youtube.png" alt="" width="60" height="60"> &emsp;
+                            //<iframe width="150" height="150" src="https://www.youtube.com/embed/uIf6Gjquwf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            br
+                            | Robotic FSW demo video
+                           
+                            
+        .jumbotron.container(style="background-color:#A8DDE0")
+            .row
+                .col-md-4
+                    img.facil-img(src='./img/facilities/6-axis.PNG', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') 6-Axis CNC FSW Machine
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | 6-axis CNC FSW machine with simultaneous movement of all axes
+                        li
+                            | Capable of welding in straight path, 2D (circular and non-circular), 3D profile, and cylindrical pipe.
+                        li
+                            | Integrated with load cell for acquiring force and torque
+                        br
+                        a(href='https://www.youtube.com/channel/UCh7uBO5Tf-SWmlx3b7dzfwg?view_as=subscriber') <img src="img/youtube.png" alt="" width="60" height="60"> &emsp;
+                        //<iframe width="150" height="150" src="https://www.youtube.com/embed/vZ0Bmlr86gY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        br
+                        | Pipe welding using FSW
+        .jumbotron.container(style="background-color:#AFE0A8")
+            .row
+                .col-md-4
+                    img.facil-img(src='./img/facilities/CNC-FSW.jpg', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') CNC FSW Machine
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | CNC FSW machine capable of producing linear welds
+                        li
+                            | Integrated with load cell for acquiring force and torque
+                        br
+                        a(href='https://www.youtube.com/channel/UCh7uBO5Tf-SWmlx3b7dzfwg?view_as=subscriber') <img src="img/youtube.png" alt="" width="60" height="60"> &emsp;
+                        //<iframe width="150" height="150" src="https://www.youtube.com/embed/TBpGRTzbyRg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        br
+                        | Real time FSW process control
+                       
+      .jumbotron.container(style="background-color:#A8DDE0")
+            .row
+                .col-md-4
+                    img.facil-img(src='./img/facilities/mill.JPG', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') Manual FSW Machine
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Robust vertical milling machine having wide range of spindle and feed speeds
+                        li
+                            | Being utilized in carrying out under-water FSW
+                            
+        .jumbotron.container(style="background-color:#AFE0A8")
+            .row
+                .col-md-4
+                    img.facil-img(src='./img/facilities/CNC-Turning1.png', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') CNC Turning Centre
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Highly precise in positioning and repeatability
+                        li
+                            | High spindle rotational speed
+                            br
+                            span.font-italic(style="color:#000000")
+                              | Procured under TCS project, Centre of Excellence in Advanced Manufacturing Technology
+                            
+                            
+        .jumbotron.container(style="background-color:#A8DDE0")
+            .row
+                .col-md-4
+                    img.facil-img-small(src='./img/facilities/Piezoelectric.jpg', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') 4-component piezoelectric dynamometer
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Piezoelectric type rotating dynamometer with an accuracy of 0.08% 
+                        li
+                            | Measures forces in three directions and torque in the axial direction
+                        li
+                            | Measured data is forwarded to the charge amplifier via new-field telemetry
+                       
+
+        .jumbotron.container(style="background-color:#AFE0A8")
+            .row
+                .col-md-4
+                    img.facil-img(src='./img/facilities/AcousticArray.jpg', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') Acoustic array
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Hand-held array of 30 microphones
+                        li
+                            | Integrated data acquisition system and software for real time noise source identification for both stationary and non-stationary measurements
+                            br
+                            span.font-italic(style="color:#000000")
+                              | Procured under TCS project, Centre of Excellence in Advanced Manufacturing Technology
+                   
+        .jumbotron.container(style="background-color:#A8DDE0")
+            .row
+                .col-md-4
+                    img.facil-img-small(src='./img/facilities/ThermalImager.png', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') Thermal Imager
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Touch screen with a 160° viewing angle 
+                        li
+                            | High temperature ranges up to 1500 °C
+                            br
+                            span.font-italic(style="color:#000000")
+                              | Procured under TCS project, Centre of Excellence in Advanced Manufacturing Technology
+                    
+        .jumbotron.container(style="background-color:#AFE0A8")
+            .row
+                .col-md-4
+                    img.facil-img-small(src='./img/facilities/PowerSensor.jpg', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') Power Sensor
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Measures the input electrical power of spindle and feed drives with online display
+                            br
+                            span.font-italic(style="color:#000000")
+                              | Procured under TCS project, Centre of Excellence in Advanced Manufacturing Technology
+                            
+        .jumbotron.container(style="background-color:#A8DDE0")
+            .row
+                .col-md-4
+                    img.facil-img-small(src='./img/facilities/VibrationSensor.jpg', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') Vibration Sensor
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Measures amplitude of vibration of machines and structures
+                  
+          .jumbotron.container(style="background-color:#AFE0A8")
+            .row
+                .col-md-4
+                    img.facil-img-small(src='./img/facilities/gp1.jpg', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') Grinding and Polishing machine
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                        li
+                            | Variable speed
+                        li
+                            | Semi-automatic specimen mover; can hold 4 specimens
+                        li
+                            | Dosing unit with adjustbale drip mechanism
+                            br
+                            span.font-italic(style="color:#000000")
+                              | Procured from DST project
+                  
+          .jumbotron.container(style="background-color:#A8DDE0")
+            .row
+                .col-md-4
+                    img.facil-img-small(src='./img/facilities/diamond1.jpg', alt='')
+                .col-md-8
+                    h4(style='color: #d9534f; font-family:Georgia, serif') Diamond Cutter
+                    ul.custom-bullet(style='color: #0000cc; font-family:Georgia, serif')
+                      li
+                            | Variable speed
+                        li
+                            | Sectioning tool capable of cutting virtually any material including brittle or ductile metals, composites, plastics etc.
+                        li
+                            | Precise cut location control
+                        li
+                            | Capable of cutting to a ±0.0001in (±5 µm) precision via a manual micrometer
+                            br
+                            span.font-italic(style="color:#000000")
+                              | Procured from DST project
+                        

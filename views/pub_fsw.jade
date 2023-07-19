@@ -1,0 +1,143 @@
+extends layout
+
+block content
+  body
+    include navbar 
+    br
+    br
+    .justify-content-center
+        .row.justify-content-center
+            h3(style='color: #2D1FF0; font-family:Georgia, serif; text-align:center') Areas of Research 
+        .jumbotron.container
+            .row
+                ul.custom-bullet(style='font-family:Georgia, serif')
+                    h4 Research on various aspects of FSW is being carried out, but not limited to:
+                    
+                    br
+                    h5(style='color: #7A0F05; font-family:Georgia, serif; text-align:left') Mechanical Aspects
+                    li
+                      | Friction stir welding and deep drawing of aluminum tailored blanks for light weight automotive applications : 
+                      span.font(style="color: #0D0758")
+                      a(href= 'http://www.fswlab.in/doctorals#Ram') Dr. Ramkumar Kesharwani
+                    li
+                      | Design of a Twin Tool : 
+                      span.font(style="color: #0D0758") 
+                      a(href= 'http://www.fswlab.in/doctorals#Kanchan') Dr. Kanchan Kumari
+                    li
+                      | Development of tools for friction stir welding of high melting point materials using direct metal laser deposition technique : 
+                      span.font(style="color: #0D0758")
+                      a(href= 'http://www.fswlab.in/doctorals#asadhu') Abhijit Sadhu
+                    li
+                      | Fabrication of electronic components of Li-ion battery pack using friction stir welding : 
+                      span.font(style="color: #0D0758")
+                      a(href= 'http://www.fswlab.in/doctorals#omkar') Dr. Omkar Mypati
+                    li
+                      | Fabrication of friction stir welded aluminium tubes and their formability performance : 
+                      span.font(style="color: #0D0758")
+                        a(href= 'http://www.fswlab.in/doctorals#debolia') Debolina Sen
+                     br   
+                        
+                    h5(style='color: #7A0F05; font-family:Georgia, serif; text-align:left') Metallurgical Aspects
+                    li
+                      |Joining of Aluminum to Steel : 
+                      a(href='http://www.fswlab.in/doctorals#Raju') Dr. Raju Prasad Mahto
+                    li
+                      |Joining of Magnesium to Steel :   
+                      a(href='http://www.fswlab.in/doctorals#surya') Suryakanta Sahu
+                    li
+                      |Friction Stir Spot Welding of Thin Sheets using Different Carbon Nanomaterials as Interlayer :  
+                      a(href='http://www.fswlab.in/doctorals#pragya') Pragya Rai
+                    br
+                    
+                    h5(style='color: #7A0F05; font-family:Georgia, serif; text-align:left') New Developments on FSW
+                    li
+                      | Friction sintering :   
+                      a(href= 'http://www.fswlab.in/doctorals#vyas') Dr. Vyas Mani Sharma
+                    li
+                      | Friction stir channeling :   
+                      a(href= 'http://www.fswlab.in/doctorals#pooja') Pooja Sarkar
+                    li
+                      | Fabrication of Aluminium Honeycomb Sandwich Structure using Friction Stir Welding : 
+                      span.font(style="color: #0D0758")
+                      a(href= 'http://www.fswlab.in/doctorals#ananta') Ananta Dutta
+                    br
+                    
+                    h5(style='color: #7A0F05; font-family:Georgia, serif; text-align:left') Modeling and Simulation
+                    li
+                      | Numerical modeling and validation of friction stir welding with different tool configurations : 
+                      a(href= 'http://www.fswlab.in/doctorals#Rahul') Dr. Rahul Jain
+                    li
+                      | Development of an integrated thermo-mechanical and metallurgical model of friction stir welding of pipes :   
+                      a(href= 'http://www.fswlab.in/doctorals#iqbal') Md Perwej Iqbal
+                    li
+                      | Numerical modeling of texture evolution in friction stir welding process :   
+                      a(href= 'http://www.fswlab.in/doctorals#soumya') Soumya Sangita Nayak
+                    br
+                   
+                    h5(style='color: #7A0F05; font-family:Georgia, serif; text-align:left') Friction Stir Processing
+                    li
+                      | Development of friction based solid-state processing strategies for the surface modification of Aluminium alloys :   
+                      a(href= 'http://www.fswlab.in/doctorals#abhishek') Dr. Abhishek Sharma
+                    li
+                      | A Novel Method of applications of solid-state technology based on friction-stir processing (FSP) principles for metal matrix composites (MMCs) :   
+                      a(href= 'http://www.fswlab.in/doctorals#ranjan') Ranjan Vishwakarma
+                    li
+                      | A Novel Method of Manufacturing of Cost Effective Graphene-Aluminum Metal Matrix Composite (Direct Exfoliation of Graphite into Graphene by Friction Stir Processing) :   
+                      a(href= 'http://www.fswlab.in/doctorals#Nurool') Noorul Hoda
+                    br
+                   
+                    h5(style='color: #7A0F05; font-family:Georgia, serif; text-align:left') Industry 4.0
+                    li
+                       | Monitoring and control of FSW : 
+                       a(href= 'http://www.fswlab.in/doctorals') Dr. Debasish Mishra
+                    li
+                       | Digital Twin for FSW : Avishek Mukherjee
+                    br
+                     
+                    h5(style='color: #7A0F05; font-family:Georgia, serif; text-align:left') Subsidiary areas
+                    li
+                       | Friction stir extrusion : 
+                       a(href= 'http://www.fswlab.in/doctorals') Rishabh Swarnkar
+                    li
+                       | FSW for joining of MMC :
+                       a(href= 'http://www.fswlab.in/doctorals#ranjan') Ranjan Viswakarma
+                    li
+                       | Friction Stir Additive Techniques : Souvik Karmakar
+                    br
+                        
+    br
+    h3(style='color: #2D1FF0; font-family:Georgia, serif; text-align:center') Total Publications on FSW : 118
+    br
+    .container
+      ul#myTab.nav.nav-tabs(role='tablist')
+        li.nav-item.text-center
+          a#home-tab.nav-link.active(data-toggle='tab', href='#patents', role='tab', aria-controls='home', aria-selected='true')
+            | Patents &emsp;
+            h5(style='color: #7B1212; font-family:Georgia, serif, text.centre:align') (13)
+        li.nav-item.text-center
+          a#profile-tab.nav-link(data-toggle='tab', href='#bookc', role='tab', aria-controls='profile', aria-selected='false')
+            | Book Chapters &emsp;
+            h5(style='color: #7B1212; font-family:Georgia, serif,text.centre:align') (9)
+        li.nav-item.text-center
+          a#contact-tab.nav-link(data-toggle='tab', href='#ijourn', role='tab', aria-controls='contact', aria-selected='false')
+            | International Journals &emsp;
+            h5(style='color: #7B1212; font-family:Georgia, serif,text.centre:align') (63)
+        li.nav-item.text-center
+          a#contact-tab.nav-link(data-toggle='tab', href='#njourn', role='tab', aria-controls='contact', aria-selected='false')
+            | National Journals &emsp;
+            h5(style='color: #7B1212; font-family:Georgia, serif,text.centre:align') (1)
+        li.nav-item.text-center
+          a#contact-tab.nav-link(data-toggle='tab', href='#conf', role='tab', aria-controls='contact', aria-selected='false')
+            | Conferences &emsp;
+            h5(style='color: #7B1212; font-family:Georgia, serif,text.centre:align') (32)
+    #myTabContent.tab-content
+      #patents.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+        include publications/fsw/patent
+      #ijourn.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+        include publications/fsw/ijournal
+      #bookc.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        include publications/fsw/bookc
+      #njourn.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        include publications/fsw/njournal 
+      #conf.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        include publications/fsw/conf      

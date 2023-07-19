@@ -1,0 +1,271 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+body{
+    background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(233,239,242,1) 20%, rgba(157,208,227,1) 43%, rgba(157,208,227,1) 58%, rgba(133,230,216,1) 67%, rgba(98,194,207,1) 81%, rgba(73,169,201,1) 91%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(20%, rgba(233,239,242,1)), color-stop(43%, rgba(157,208,227,1)), color-stop(58%, rgba(157,208,227,1)), color-stop(67%, rgba(133,230,216,1)), color-stop(81%, rgba(98,194,207,1)), color-stop(91%, rgba(73,169,201,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(233,239,242,1) 20%, rgba(157,208,227,1) 43%, rgba(157,208,227,1) 58%, rgba(133,230,216,1) 67%, rgba(98,194,207,1) 81%, rgba(73,169,201,1) 91%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(233,239,242,1) 20%, rgba(157,208,227,1) 43%, rgba(157,208,227,1) 58%, rgba(133,230,216,1) 67%, rgba(98,194,207,1) 81%, rgba(73,169,201,1) 91%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(233,239,242,1) 20%, rgba(157,208,227,1) 43%, rgba(157,208,227,1) 58%, rgba(133,230,216,1) 67%, rgba(98,194,207,1) 81%, rgba(73,169,201,1) 91%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(233,239,242,1) 20%, rgba(157,208,227,1) 43%, rgba(157,208,227,1) 58%, rgba(133,230,216,1) 67%, rgba(98,194,207,1) 81%, rgba(73,169,201,1) 91%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#49a9c9', GradientType=0 );
+overflow-x: hidden;
+}
+.body-home{
+background-image:url("../img/bg0-blur.jpg") ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.navbarb{
+    text-transform: uppercase;
+    background: black !important; 
+    
+}
+.nav-item{
+    margin-right:1em ;
+}
+.nav-item:hover{
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.space-d2{
+    margin: 1% 2% 1% 0%;
+    padding-top: 0 !important;
+    height: 100%;
+}
+.space-d{
+    margin: 1% 1%;
+}
+.content-home{
+margin:5% 7% ;
+}
+.top{
+    height: 100%;
+    width:100% ;
+}
+.label{
+    /* background-image: url("../img/slider11.jpg") !important; */
+    background-size:cover ;
+    height: 60vh;
+}
+.label-2
+{
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  
+}
+.top-new{
+    padding: 10%;
+    /* height: 60vh; */
+    margin-right: -30px;
+    /* overflow-y: auto; */
+}
+.event-div{
+    border-top: solid black;
+    padding-left: 8px;
+    padding-right: 2px;
+}
+.event-div:hover{
+    background-color: black;
+    color: wheat;
+}
+.event-button{
+    width: 100%;
+}
+#about{
+    margin: 0% 1% 1% 2%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 1.35em; */
+    /* border: solid black;
+    border-radius: 10px;; */
+}
+.bg-about{
+    background-color: #4d0000 ;
+    padding: 3%;
+}
+.bg-profquote{
+    background-color: #9e1f1b;
+    opacity: .8;
+}
+.ab-img{
+    margin-top: 1%;
+}
+/* table */
+.data{
+    padding: 3%;
+}
+/* footer */
+footer{
+    background-color: #902424 !important ;
+    color: blanchedalmond;
+    text-align: center;
+    padding:30px;
+}
+.foot-div{
+border-right: solid 2px ;
+}
+.profile-img{
+    width: 10em;
+}
+.fs-std{
+    font-size: 2em;
+    padding-right: .2em;
+    color: black;
+}
+.prof-img{
+    
+}
+.prof-q{
+    margin-top:2% ;
+}
+.facil-img{
+    width: 300px;
+}
+.facil-img-small{
+    width: 200px;
+}
+.collab-div{
+    padding-top: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+.collab-img{
+    width: 11em;
+}
+/* .custom-bullet li {
+    display: block;
+}
+
+.custom-bullet li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point
+    content: "\e080";
+    font-family: 'Glyphicons-Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+} */
+a{
+    color: black;
+}
+a.home{
+    color: white;
+}
+.card-custom{
+    background-color: white;
+    margin: 2%;
+}
+/* .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    height: auto;
+    width: auto;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    } */
+.fontsmall{
+    font-size:.8em;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   #brand-img{
+       max-width: 250px;
+   }
+   footer{
+       text-align:center
+   }
+   .body-home{
+       width:115%
+   }
+   .body-home>.lf{
+    text-align:center;
+   }
+   .ind-con{
+       text-align: center;
+
+       margin-left:5%;
+       
+   }
+   
+   .head{
+       margin-left:50%;
+       margin-right:50%
+   }
+  }
+
+
+  #portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+  }
+  
+  #portfolio .portfolio-item .portfolio-link {
+    
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  
+  
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+  }
+  
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    font-size: 20px;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    color: white;
+  }
+  
+
+  
+  
+  #portfolio .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  #portfolio .portfolio-item .portfolio-caption h4 {
+    margin: 0;
+    text-transform: none;
+  }
+  
+  #portfolio .portfolio-item .portfolio-caption p {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  
+  #portfolio * {
+    z-index: 2;
+  }
+  
+  @media (min-width: 767px) {
+    #portfolio .portfolio-item {
+      margin: 0 0 30px;
+    }
+  }
+  
+  

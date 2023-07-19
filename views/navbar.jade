@@ -1,0 +1,28 @@
+nav.navbar.navbarb.stickyt-top.navbar-expand-lg.navbar-dark.bg-transparent
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      a.navbar-brand(href='#')
+        img#brand-img(src='./img/Picture2.png', style='max-height:100px;')
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.active
+            a.nav-link(href='/')
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='/facilities') Facilities
+          li.nav-item
+            a.nav-link(href='/projs') Projects
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | Members
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='/doctorals') Doctoral
+              a.dropdown-item(href='/pg') PG
+              a.dropdown-item(href='/ug') UG
+              a.dropdown-item(href='/interns') Interns
+              a.dropdown-item(href='/staff') Staff
+          li.nav-item
+            a.nav-link(href='/pub') Research
+          li.nav-item
+            a.nav-link(href='/collab') Collaborators

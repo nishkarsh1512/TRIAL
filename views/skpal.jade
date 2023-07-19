@@ -1,0 +1,250 @@
+extends layout2
+
+block content
+  body
+    include navbar2 
+    .container-fluid(style="padding-left:0")
+      .row.body-home
+        .col-md-3
+          img.img-fluid(src='./img/prof_skp3.jpg', alt='', width='350px')
+        .col-md-8(style="padding:2%;padding-top:6%;")
+          h2(style='color: white; font-family:Georgia, serif') 
+            a.home(href= 'http://www.iitkgp.ac.in/department/ME/faculty/me-skpal') Surjya Kanta Pal
+            h5(style='color: white; font-family:Georgia, serif; font-style: italic') 
+              a.home Fellow of Indian National Academy of Engineering
+            h5(style='color: #1C1C1E; font-family:Georgia, serif; font-style: italic') 
+              a.home(href= 'https://www.iitkgpfoundation.org/article.html?aid=799') Former Lord Kumar Bhattacharyya Chair Professor in Manufacturing
+            h5(style='color: #1C1C1E; font-family:Georgia, serif')
+              a.home(href= 'http://www.iitkgp.ac.in/department/ME') Department of Mechanical Engineering
+            h5(style='color: #1C1C1E; font-family:Georgia, serif')
+              a.home(href= 'http://www.iitkgp.ac.in/') Indian Institute of Technology Kharagpur
+            h5(style='color: white; font-family:Georgia, serif')
+              | 721 302, West Bengal, India
+              br
+              | Email: skpal[at]mech.iitkgp.ac.in
+              br
+              br
+              a(href='https://www.researchgate.net/profile/Surjya_Pal') <img src="img/ResearchGate.png" alt="" width="30" height="30"> &emsp;
+              a(href='https://scholar.google.co.in/citations?user=rj8w-HgAAAAJ&hl=en') <img src="img/googlescholar.jpg" alt="" width="30" height="30"> &emsp;
+              a(href='https://www.facebook.com/surjyak.pal') <img src="img/facebook.png" alt="" width="30" height="30">
+         
+    //.container-fluid(style='padding:  3%;')
+      .row(style='padding-top: %;')
+        .col-md-6
+          h5 Research Interests
+          ul(type='square')
+            li
+              | Friction Stir Welding
+            li
+              a(href= 'http://www.coeamt.com/industry-project-project1.php') Industry 4.0
+            li
+              | Modelling and Simulation of Manufacturing Process
+            li
+              | Ultrafast Cooling methodologies for metal strips in rolling process
+        .col-md-6
+          h5 Education / Qualifications
+          ul(type='square')
+            li
+              | B.E (1991), 
+              a(href= 'https://jgec.ac.in/') Government Engineering College, Jalpaiguri, WB
+            li
+              | M.Tech (1993), 
+              a(href= 'http://www.iitk.ac.in/') IIT Kanpur
+            li
+              | Ph.D. (1999), 
+              a(href= 'http://www.iitkgp.ac.in/') IIT Kharagpur
+            li
+              | Postdoctoral Research (1999-2002), 
+              a(href= 'https://www.sheffield.ac.uk/') The University of Sheffield, UK
+      .row(style='padding-top: 1%;')
+        .col-md-6
+          h5 Responsibility
+          .row
+            h6 Current
+            br
+            ul
+              li  
+                | Professor, 
+                a(href= 'http://www.iitkgp.ac.in/department/ME') Department of Mechanical Engineering
+              li  
+                | Professor-in-Charge, 
+                a(href= 'http://www.coeamt.com/') Centre of Excellence in Advanced Manufacturing Technology
+              //li 
+                | Chairman, Steel Technology Centre
+              //li 
+                | Executive Adviser, 
+                a(href= 'https://www.step-iit.org/') Science and Technology Entrepreneurs’ Park (STEP)
+              li 
+                | Prof-in-Charge: Metrology Lab and FSW Lab
+          .row
+            h6 Past &emsp;
+            br
+            ul
+              li 
+                | Associate Dean, 
+                a(href= 'https://www.alumni.iitkgp.ac.in/') Alumni Affairs
+              li 
+                | Chairman, Steel Technology Centre
+              li 
+                | Executive Adviser, 
+                a(href= 'https://www.step-iit.org/') Science and Technology Entrepreneurs’ Park (STEP)li 
+                | Chairman,  
+                a(href= 'http://www.hmc.iitkgp.ac.in/web/') Hall Management Centre
+              li 
+                | Organizing Vice-Chairman, JEE (Adv)-2014
+              li 
+                |Vice-Chairman, JEE (Adv)-2013
+        .col-md-6(style='padding-top: 2%;')
+          .row
+            h5 Teaching Experience
+          .row  
+            ul(type='square')
+              li
+                a(href= 'http://www.iitg.ac.in/') IIT Guwahati 
+                | (July 2002- July 2004)
+              li
+                a(href= 'http://www.iitkgp.ac.in/') IIT Kharagpur 
+                | (July 2004- till date)
+          .row
+            h5 Industrial Experience
+            ul(type='square')
+              li
+                | Engineering & Development Division of Grasim Industries Ltd. (MP) (1994-1995)
+    br
+    br
+    .row.mx-auto.justify-content-center
+      ul#pills-tab.nav.nav-pills.mb-3(role='tablist')
+        li.nav-item
+          a#pills-profile-tab.nav-link.active(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='true') Profile
+        li.nav-item
+          a#pills-projects-tab.nav-link(data-toggle='pill', href='#pills-projects', role='tab', aria-controls='pills-projects', aria-selected='false') Projects
+        li.nav-item
+          a#pills-publications-tab.nav-link(data-toggle='pill', href='#pills-publications', role='tab', aria-controls='pills-publications', aria-selected='false') Publications
+        li.nav-item
+          a#pills-sg-tab.nav-link(data-toggle='pill', href='#pills-sg', role='tab', aria-controls='pills-sg', aria-selected='false') Student Guidance          
+      #pills-tabContent.tab-content
+        #pills-profile.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-profile-tab') 
+          .container-fluid(style='padding:  3%;')
+            .row(style='padding-top: %;')
+              .col-md-6
+                h5 Research Interests
+                ul(type='square')
+                  li
+                    | Friction Stir Welding
+                  li
+                    a(href= 'http://www.coeamt.com/industry-project-project1.php') Industry 4.0
+                  li
+                    | Modelling and Simulation of Manufacturing Process
+                  li
+                    | Ultrafast Cooling methodologies for metal strips in rolling process
+              .col-md-6
+                h5 Education / Qualifications
+                ul(type='square')
+                  li
+                    | B.E (1991), 
+                    a(href= 'https://jgec.ac.in/') Government Engineering College, Jalpaiguri, WB
+                  li
+                    | M.Tech (1993), 
+                    a(href= 'http://www.iitk.ac.in/') IIT Kanpur
+                  li
+                    | Ph.D. (1999), 
+                    a(href= 'http://www.iitkgp.ac.in/') IIT Kharagpur
+                  li
+                    | Postdoctoral Research (1999-2002), 
+                    a(href= 'https://www.sheffield.ac.uk/') The University of Sheffield, UK
+            .row(style='padding-top: 1%;')
+              .col-md-6
+                h5 Responsibility
+                .row
+                  h6 Current
+                  br
+                  ul
+                    li  
+                      | Professor, 
+                      a(href= 'http://www.iitkgp.ac.in/department/ME') Department of Mechanical Engineering
+                    li  
+                      | Chairperson, 
+                      a(href= 'http://www.coeamt.com/') Centre of Excellence in Advanced Manufacturing Technology
+                    //li 
+                      | Chairman, Steel Technology Centre
+                    //li 
+                      | Executive Adviser, 
+                      a(href= 'https://www.step-iit.org/') Science and Technology Entrepreneurs’ Park (STEP)
+                    li 
+                      | Prof-in-Charge: Metrology Lab and FSW Lab
+                .row
+                  h6 Past &emsp;
+                  br
+                  ul
+                    li 
+                      | Associate Dean, 
+                      a(href= 'https://www.alumni.iitkgp.ac.in/') Alumni Affairs and Branding
+                    li 
+                      | Chairman, Steel Technology Centre
+                    li 
+                      | Executive Adviser, 
+                      a(href= 'https://www.step-iit.org/') Science and Technology Entrepreneurs’ Park (STEP)
+                    li 
+                      | Chairman,  
+                      a(href= 'http://www.hmc.iitkgp.ac.in/web/') Hall Management Centre
+                    li 
+                      | Organizing Vice-Chairman, JEE (Adv)-2014
+                    li 
+                      |Vice-Chairman, JEE (Adv)-2013
+              .col-md-6(style='padding-top: 2%;')
+                .row
+                  h5 Teaching Experience
+                .row  
+                  ul(type='square')
+                    li
+                      a(href= 'http://www.iitg.ac.in/') IIT Guwahati 
+                      | (July 2002- July 2004)
+                    li
+                      a(href= 'http://www.iitkgp.ac.in/') IIT Kharagpur 
+                      | (July 2004- till date)
+                .row
+                  h5 Industrial Experience
+                  ul(type='square')
+                    li
+                      | Engineering & Development Division of Grasim Industries Ltd. (MP) (1994-1995)
+
+
+        #pills-projects.tab-pane.fade(role='tabpanel', aria-labelledby='pills-projects-tab')
+          include projects/total/data
+        #pills-publications.tab-pane.fade(role='tabpanel', aria-labelledby='pills-publications-tab')
+          include pub_tot
+        #pills-sg.tab-pane.fade(role='tabpanel', aria-labelledby='pills-sg-tab')
+          include students/doctoral_cv
+
+
+        
+    //.row.justify-content-center(style='padding: 1%;')
+      #accordion
+        .card
+          #headingOne.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                | Projects
+          #collapseOne.collapse.collapsed(aria-labelledby='headingOne', data-parent='#accordion')
+            
+              include projects/total/data
+        .card
+          #headingTwo.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                | Publications
+          #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+            .card-body
+              include pub_tot
+        .card
+          #headingThree.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                | Student Guidance
+          #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+            .card-body
+              include students/doctoral_cv
+              br
+              br
+              //include students/pg_cv
+
